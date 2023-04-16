@@ -2,7 +2,7 @@
 Software for Jansen's linkage based robot.
 
 # PL
-Oprogramowanie dla robota opartego na mechaniźmie Jansena
+Oprogramowanie dla robota opartego na mechaniźmie Jansena.
 ## Wymagane urządzenia
 - Raspberry Pi
 - Waveshare HRB8825 Stepper Motor HAT For Raspberry Pi
