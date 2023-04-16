@@ -47,8 +47,8 @@ begin
         motor1.rotate :front
         motor2.rotate :front
       when "front_fast"
-        motor1.rotate :front, 1000
-        motor2.rotate :front, 1000
+        motor1.rotate :front, 900
+        motor2.rotate :front, 900
       when "back_slow"
         motor1.rotate :back, 300
         motor2.rotate :back, 300
@@ -56,8 +56,8 @@ begin
         motor1.rotate :back
         motor2.rotate :back
       when "back_fast"
-        motor1.rotate :back, 1000
-        motor2.rotate :back, 1000
+        motor1.rotate :back, 900
+        motor2.rotate :back, 900
       when "left"
         motor1.rotate :front
         motor2.rotate :back

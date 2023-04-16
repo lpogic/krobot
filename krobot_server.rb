@@ -6,17 +6,17 @@ set :bind, '0.0.0.0'
 template = <<~HTML
   <style>
     button {
-      font-size: 8rem;
+      font-size: 15vh;
     }
   </style>
-  <form method="POST" style="width: 100%; display: grid; grid-template-columns: auto auto auto; grid-template-rows: 28vh 28vh 28vh; gap: 0.1em">
-    <button name="control" value="front_slow">&#x1F851;</button>
+  <form method="POST" style="width: 100%; height: 100%; display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto; gap: 0.1em">
+    <button name="control" value="front_slow">&UpArrow;</button>
     <button name="control" value="front">&DoubleUpArrow;</button>
     <button name="control" value="front_fast">&#x290A;</button>
     <button name="control" value="left">&circlearrowleft;</button>
     <button name="control" value="stop">STOP</button>
     <button name="control" value="right">&circlearrowright;</button>
-    <button name="control" value="back_slow">&#x1F853;</button>
+    <button name="control" value="back_slow">&DownArrow;</button>
     <button name="control" value="back">&DoubleDownArrow;</button>
     <button name="control" value="back_fast">&#x290B;</button>
   </form>
