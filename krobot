@@ -1,0 +1,27 @@
+#!/bin/ruby
+
+fork do
+  exec 'mosquitto -p 5678'
+end
+
+sleep 2
+
+fork do
+  exec 'ruby krobot_server.rb'
+end
+
+sleep 2
+
+fork do
+  exec 'python mqtt_gpio.py'
+end
+
+sleep 2
+
+fork do
+  exec 'ruby krobot_client.rb'
+end
+
+loop do
+  sleep 1
+end
